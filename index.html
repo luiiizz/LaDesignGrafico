@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+<!-- ============ SEO ============ -->
+<title>La Design Gráfico | Identidade Visual, Casamentos & Design Criativo</title>
+<meta name="description" content="Design gráfico profissional para empresas, casamentos, aniversários e marcas que desejam se destacar. Identidade visual, convites, logotipos e artes digitais exclusivas por Lorrayne Annyelly.">
+<meta name="keywords" content="design gráfico, identidade visual, convites de casamento, logotipo, artes digitais, La Design Gráfico">
+<meta name="author" content="La Design Gráfico — Lorrayne Annyelly">
+<link rel="canonical" href="https://ladesigngrafico.com.br/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="La Design Gráfico | Identidade Visual & Design Criativo">
+<meta property="og:description" content="Transformando ideias em identidades que encantam. Design gráfico para empresas, casamentos e marcas.">
+<meta property="og:image" content="Principal/logo2.jpeg">
+<meta property="og:locale" content="pt_BR">
+
+<!-- Favicon -->
+<link rel="icon" href="Principal/simbolo-logo.jpeg" type="image/jpeg">
+<link rel="apple-touch-icon" href="Principal/simbolo-logo.jpeg">
+
+<!-- Fonts & Icons -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          cream: { DEFAULT:'#FBF7F1', soft:'#F4EDE1', deep:'#ECE1CE' },
+          ink: { DEFAULT:'#2C2420', soft:'#5B4F47' },
+          gold: { 100:'#F6E9C8', 300:'#E3C481', 500:'#C9A24B', 600:'#B4893A', 700:'#92702E' },
+          purple: { 100:'#EFE5F7', 200:'#DCC5EE', 300:'#C29CE0', 400:'#A578CE', 500:'#8B5CB8', 600:'#7443A0', 700:'#5B3380', 800:'#402259' }
+        },
+        fontFamily: {
+          serif: ['"Playfair Display"','serif'],
+          script: ['"Alex Brush"','cursive'],
+          display: ['"Cormorant Garamond"','serif'],
+          sans: ['"Jost"','sans-serif']
+        }
+      }
+    }
+  }
+</script>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+</head>
+
+<body class="bg-cream text-ink font-sans antialiased">
+
+<!-- =========================================================
+     NAVBAR
+========================================================= -->
+<header id="navbar" class="fixed top-0 inset-x-0 z-50 scrolled">
+  <nav class="max-w-7xl mx-auto flex items-center justify-between px-5 md:px-8 py-3.5">
+    <a href="#hero" class="flex items-center gap-3 group">
+      <span class="logo-badge w-14 h-14 md:w-16 md:h-16 shrink-0 shadow-sm">
+        <img src="Principal/simbolo-logo.jpeg" alt="Símbolo La Design Gráfico" class="w-full h-full object-cover">
+      </span>
+      <span class="flex flex-col leading-none">
+        <span class="font-script text-3xl md:text-4xl text-gradient-purple">La Design</span>
+        <span class="text-[0.62rem] md:text-xs tracking-[0.3em] uppercase text-gold-700 font-medium">Identidade Visual</span>
+      </span>
+    </a>
+
+    <div id="nav-links" class="hidden lg:flex items-center gap-8">
+      <a href="#sobre" class="nav-link">Sobre</a>
+      <a href="#servicos" class="nav-link">Serviços</a>
+      <a href="#portfolio" class="nav-link">Portfólio</a>
+      <a href="#feedbacks" class="nav-link">Depoimentos</a>
+      <a href="#casamento" class="nav-link">Casamentos</a>
+      <a href="#diferenciais" class="nav-link">Diferenciais</a>
+      <a href="#contato" class="nav-link">Contato</a>
+    </div>
+
+    <div class="flex items-center gap-3">
+      <a href="https://wa.me/message/SDALEQO5U45FD1" target="_blank" rel="noopener" class="btn btn-purple !py-2.5 !px-5 hidden sm:inline-flex">
+        <i data-lucide="message-circle" class="w-4 h-4"></i>
+        <span class="text-sm">Orçamento</span>
+      </a>
+      <button id="menu-btn" class="lg:hidden w-11 h-11 rounded-full flex items-center justify-center border border-gold-500/40 text-purple-700">
+        <i data-lucide="menu" id="menu-open" class="w-5 h-5"></i>
+        <i data-lucide="x" id="menu-close" class="w-5 h-5 hidden"></i>
+      </button>
+    </div>
+  </nav>
+
+  <div id="mobile-menu" class="hidden lg:hidden bg-cream/98 backdrop-blur-md border-t border-gold-500/20 px-6 py-6 flex flex-col gap-5 shadow-lg">
+    <a href="#sobre" class="nav-link text-base">Sobre</a>
+    <a href="#servicos" class="nav-link text-base">Serviços</a>
+    <a href="#portfolio" class="nav-link text-base">Portfólio</a>
+    <a href="#feedbacks" class="nav-link text-base">Depoimentos</a>
+    <a href="#casamento" class="nav-link text-base">Casamentos</a>
+    <a href="#diferenciais" class="nav-link text-base">Diferenciais</a>
+    <a href="#contato" class="nav-link text-base">Contato</a>
+    <a href="https://wa.me/message/SDALEQO5U45FD1" target="_blank" rel="noopener" class="btn btn-purple w-full mt-2">
+      <i data-lucide="message-circle" class="w-4 h-4"></i> Solicitar Orçamento
+    </a>
+  </div>
+</header>
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+<section id="hero" class="hero-shell flex items-end">
+  <img src="Principal/eu.jpeg" alt="Lorrayne Annyelly, designer gráfica da La Design Gráfico" class="hero-img">
+  <div class="hero-overlay"></div>
+  <div class="grain"></div>
+
+  <div class="hero-blob w-72 h-72 md:w-96 md:h-96 bg-gold-500 -top-10 -left-16 parallax-shape animate-drift" data-speed="0.12"></div>
+  <div class="hero-blob w-64 h-64 bg-purple-400 bottom-24 right-[-4rem] parallax-shape" data-speed="0.2"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto w-full px-5 md:px-8 pb-20 md:pb-28 pt-40">
+    <div class="max-w-2xl">
+      <div class="inline-block bg-cream rounded-2xl shadow-2xl px-6 py-5 mb-8 reveal">
+        <img src="Principal/logo2.jpeg" alt="La Design Gráfico — Identidade Visual" class="w-56 md:w-72 logo-blend">
+      </div>
+
+      <p class="eyebrow text-gold-300 mb-4 reveal reveal-delay-1">Design gráfico &amp; identidade visual</p>
+
+      <h1 class="section-title text-white text-4xl sm:text-5xl md:text-6xl mb-6 reveal reveal-delay-1">
+        Transformando ideias em <span class="text-gradient-gold italic">identidades</span> que encantam.
+      </h1>
+
+      <p class="font-display text-lg md:text-xl text-purple-100/90 mb-10 max-w-xl reveal reveal-delay-2">
+        Design gráfico profissional para empresas, casamentos, aniversários e marcas que desejam se destacar.
+      </p>
+
+      <div class="flex flex-wrap gap-4 reveal reveal-delay-3">
+        <a href="https://wa.me/message/SDALEQO5U45FD1" target="_blank" rel="noopener" class="btn btn-gold">
+          <i data-lucide="message-circle" class="w-4 h-4"></i> Solicitar Orçamento
+        </a>
+        <a href="#portfolio" class="btn btn-outline">
+          <i data-lucide="images" class="w-4 h-4"></i> Ver Portfólio
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <a href="#sobre" class="hidden md:flex absolute bottom-8 right-8 z-10 flex-col items-center gap-2 text-gold-100/80 text-xs tracking-[0.25em] uppercase">
+    <span style="writing-mode:vertical-rl">Rolar</span>
+    <i data-lucide="arrow-down" class="w-4 h-4 animate-bounce"></i>
+  </a>
+</section>
+
+<!-- =========================================================
+     SOBRE MIM
+========================================================= -->
+<section id="sobre" class="py-24 md:py-32 relative overflow-hidden">
+  <div class="absolute -z-10 top-0 right-0 w-[36rem] h-[36rem] bg-purple-100 rounded-full blur-3xl opacity-60 -translate-y-1/3 translate-x-1/3"></div>
+
+  <div class="max-w-7xl mx-auto px-5 md:px-8 grid lg:grid-cols-2 gap-16 items-center">
+    <div class="relative reveal-scale order-2 lg:order-1">
+      <div class="ring-frame max-w-md mx-auto">
+        <img src="Principal/eu-2.jpeg" alt="Lorrayne Annyelly trabalhando em seu home office" class="rounded-[1.4rem] shadow-2xl w-full object-cover aspect-[4/5]">
+      </div>
+      <div class="absolute -bottom-8 -left-4 md:-left-10 bg-white rounded-2xl shadow-xl px-6 py-5 flex items-center gap-4 border border-gold-500/20">
+        <span class="text-3xl font-serif text-gradient-gold font-bold">4+</span>
+        <span class="text-sm text-ink-soft leading-tight">anos de<br>experiência</span>
+      </div>
+    </div>
+
+    <div class="order-1 lg:order-2">
+      <p class="eyebrow mb-3 reveal">Sobre mim</p>
+      <h2 class="section-title text-3xl md:text-5xl mb-6 reveal reveal-delay-1">
+        Prazer, sou a <span class="font-script text-gradient-purple text-4xl md:text-6xl">Lorrayne Annyelly</span>
+      </h2>
+
+      <div class="space-y-4 text-ink-soft leading-relaxed reveal reveal-delay-2">
+        <p>Sou designer gráfica e atuo há <strong class="text-ink">4 anos</strong> no formato Home Office, criando identidades visuais que vão além da estética. Meu propósito é transformar ideias em algo único e autêntico.</p>
+        <p>Trabalho com criação de convites, logos e artes digitais, sempre buscando entender a essência de cada cliente para entregar não apenas um design bonito, mas uma identidade que realmente represente sua história e seu valor.</p>
+        <p>Sou apaixonada pelo que faço e acredito que cada detalhe importa. Meu objetivo é fazer com que cada projeto transmita personalidade, conexão e profissionalismo, deixando cada arte com sua própria assinatura visual.</p>
+      </div>
+
+      <a href="#servicos" class="btn btn-ghost-dark mt-8 reveal reveal-delay-3">
+        Conheça meus serviços <i data-lucide="arrow-right" class="w-4 h-4"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     SERVIÇOS
+========================================================= -->
+<section id="servicos" class="py-24 md:py-32 bg-cream-soft relative">
+  <div class="max-w-7xl mx-auto px-5 md:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+      <p class="eyebrow mb-3">O que eu faço</p>
+      <h2 class="section-title text-3xl md:text-5xl mb-5">Serviços feitos sob medida</h2>
+      <div class="divider-orn mb-5"><i data-lucide="sparkles" class="w-4 h-4 text-gold-500"></i></div>
+      <p class="text-ink-soft font-display text-lg">Cada projeto é pensado para traduzir a essência do seu evento ou marca em uma arte exclusiva.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- cards de serviço -->
+      <div class="service-card reveal"><div class="service-icon mb-5"><i data-lucide="heart" class="w-6 h-6"></i></div><h3 class="font-serif text-xl mb-2">Artes para Casamento</h3><p class="text-sm text-ink-soft">Convites, papelaria e artes que eternizam o dia mais especial do casal.</p></div>
+
+      <div class="service-card reveal reveal-delay-1"><div class="service-icon mb-5"><i data-lucide="party-popper" class="w-6 h-6"></i></div><h3 class="font-serif text-xl mb-2">Artes para Aniversários</h3><p class="text-sm text-ink-soft">Convites e artes personalizadas para celebrar cada idade com estilo.</p></div>
+
+      <div class="service-card reveal reveal-delay-2"><div class="service-icon mb-5"><i data-lucide="layout-template" class="w-6 h-6"></i></div><h3 class="font-serif text-xl mb-2">Templates Editáveis</h3><p class="text-sm text-ink-soft">Modelos práticos e elegantes prontos para você personalizar.</p></div>
+
+      <div class="service-card reveal"><div class="service-icon mb-5"><i data-lucide="user-round" class="w-6 h-6"></i></div><h3 class="font-serif text-xl mb-2">Template de Biografia</h3><p class="text-sm text-ink-soft">Link na bio com identidade visual própria e alinhada à sua marca.</p></div>
+
+      <div class="service-card reveal reveal-delay-1"><div class="service-icon mb-5"><i data-lucide="palette" class="w-6 h-6"></i></div><h3 class="font-serif text-xl mb-2">Identidade Visual</h3><p class="text-sm text-ink-soft">Construção completa da identidade da sua marca, do conceito à aplicação.</p></div>
+
+      <div class="service-card reveal reveal-delay-2"><div class="service-icon mb-5"><i data-lucide="megaphone" class="w-6 h-6"></i></div><h3 class="font-serif text-xl mb-2">Publicidade e Marketing</h3><p class="text-sm text-ink-soft">Peças estratégicas para redes sociais e campanhas de divulgação.</p></div>
+
+      <div class="service-card reveal"><div class="service-icon mb-5"><i data-lucide="shapes" class="w-6 h-6"></i></div><h3 class="font-serif text-xl mb-2">Logotipos</h3><p class="text-sm text-ink-soft">Marcas únicas, memoráveis e com significado por trás de cada traço.</p></div>
+
+      <div class="service-card reveal reveal-delay-1"><div class="service-icon mb-5"><i data-lucide="mail" class="w-6 h-6"></i></div><h3 class="font-serif text-xl mb-2">Convites</h3><p class="text-sm text-ink-soft">Convites impressos e digitais para todos os tipos de evento.</p></div>
+
+      <div class="service-card reveal reveal-delay-2"><div class="service-icon mb-5"><i data-lucide="book-open" class="w-6 h-6"></i></div><h3 class="font-serif text-xl mb-2">Portfólios</h3><p class="text-sm text-ink-soft">Materiais que apresentam seu trabalho com sofisticação e clareza.</p></div>
+
+      <div class="service-card reveal"><div class="service-icon mb-5"><i data-lucide="book" class="w-6 h-6"></i></div><h3 class="font-serif text-xl mb-2">Catálogos</h3><p class="text-sm text-ink-soft">Catálogos organizados e visualmente atrativos para seus produtos.</p></div>
+
+      <div class="service-card reveal reveal-delay-1"><div class="service-icon mb-5"><i data-lucide="file-text" class="w-6 h-6"></i></div><h3 class="font-serif text-xl mb-2">Panfletos</h3><p class="text-sm text-ink-soft">Divulgação impressa com design que chama atenção.</p></div>
+
+      <div class="service-card reveal reveal-delay-2"><div class="service-icon mb-5"><i data-lucide="image" class="w-6 h-6"></i></div><h3 class="font-serif text-xl mb-2">Banners</h3><p class="text-sm text-ink-soft">Peças de destaque para eventos, lojas e campanhas.</p></div>
+
+      <div class="service-card reveal"><div class="service-icon mb-5"><i data-lucide="layout-dashboard" class="w-6 h-6"></i></div><h3 class="font-serif text-xl mb-2">Cartazes</h3><p class="text-sm text-ink-soft">Comunicação visual direta e impactante.</p></div>
+
+      <div class="service-card reveal reveal-delay-1"><div class="service-icon mb-5"><i data-lucide="folder-open" class="w-6 h-6"></i></div><h3 class="font-serif text-xl mb-2">Folders</h3><p class="text-sm text-ink-soft">Material institucional dobrável, elegante e informativo.</p></div>
+
+      <div class="service-card reveal reveal-delay-2"><div class="service-icon mb-5"><i data-lucide="signpost" class="w-6 h-6"></i></div><h3 class="font-serif text-xl mb-2">Placas</h3><p class="text-sm text-ink-soft">Sinalização e placas decorativas com identidade personalizada.</p></div>
+
+      <!-- card especial -->
+      <div class="service-card special reveal reveal-delay-3 sm:col-span-2 lg:col-span-1">
+        <div class="service-icon mb-5"><i data-lucide="code-2" class="w-6 h-6"></i></div>
+        <h3 class="font-serif text-xl mb-2">Desenvolvimento de Sites e Automações</h3>
+        <p class="text-sm text-purple-100/90">Em parceria com a <strong class="text-gold-300">BygSoft Solutions</strong>, oferecemos desenvolvimento de sites profissionais e soluções de automação para empresas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     PORTFÓLIO / BANNERS (masonry + lightbox)
+========================================================= -->
+<section id="portfolio" class="py-24 md:py-32">
+  <div class="max-w-7xl mx-auto px-5 md:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+      <p class="eyebrow mb-3">Portfólio</p>
+      <h2 class="section-title text-3xl md:text-5xl mb-5">Trabalhos que contam histórias</h2>
+      <div class="divider-orn mb-5"><i data-lucide="image" class="w-4 h-4 text-gold-500"></i></div>
+      <p class="text-ink-soft font-display text-lg">Uma seleção de artes desenvolvidas para marcas e clientes reais. Clique para ampliar.</p>
+    </div>
+
+    <div class="masonry columns-1 sm:columns-2 lg:columns-3 gap-5 reveal">
+      <div class="gallery-item" data-gallery="portfolio" data-full="banners/Convites de Casamento.jpeg" data-caption="Convites de Casamento">
+        <img src="banners/Convites de Casamento.jpeg" alt="Convites de Casamento — portfólio La Design Gráfico" loading="lazy">
+        <span class="zoom-badge"><i data-lucide="zoom-in" class="w-4 h-4"></i></span>
+        <span class="gallery-caption">Convites de Casamento</span>
+      </div>
+      <div class="gallery-item" data-gallery="portfolio" data-full="banners/Logotipo e Identidade Visual.jpeg" data-caption="Logotipo e Identidade Visual">
+        <img src="banners/Logotipo e Identidade Visual.jpeg" alt="Logotipo e Identidade Visual — portfólio La Design Gráfico" loading="lazy">
+        <span class="zoom-badge"><i data-lucide="zoom-in" class="w-4 h-4"></i></span>
+        <span class="gallery-caption">Logotipo e Identidade Visual</span>
+      </div>
+      <div class="gallery-item" data-gallery="portfolio" data-full="banners/Artes Cardapio.jpeg" data-caption="Artes de Cardápio">
+        <img src="banners/Artes Cardapio.jpeg" alt="Artes de Cardápio — portfólio La Design Gráfico" loading="lazy">
+        <span class="zoom-badge"><i data-lucide="zoom-in" class="w-4 h-4"></i></span>
+        <span class="gallery-caption">Artes de Cardápio</span>
+      </div>
+      <div class="gallery-item" data-gallery="portfolio" data-full="banners/Panfletos e Portifolios.jpeg" data-caption="Panfletos e Portfólios">
+        <img src="banners/Panfletos e Portifolios.jpeg" alt="Panfletos e Portfólios — portfólio La Design Gráfico" loading="lazy">
+        <span class="zoom-badge"><i data-lucide="zoom-in" class="w-4 h-4"></i></span>
+        <span class="gallery-caption">Panfletos e Portfólios</span>
+      </div>
+      <div class="gallery-item" data-gallery="portfolio" data-full="banners/Cartaz Posts Publicidade.jpeg" data-caption="Cartazes, Posts e Publicidade">
+        <img src="banners/Cartaz Posts Publicidade.jpeg" alt="Cartazes, Posts e Publicidade — portfólio La Design Gráfico" loading="lazy">
+        <span class="zoom-badge"><i data-lucide="zoom-in" class="w-4 h-4"></i></span>
+        <span class="gallery-caption">Cartazes, Posts e Publicidade</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     FEEDBACKS DOS CLIENTES
+========================================================= -->
+<section id="feedbacks" class="py-24 md:py-32 bg-purple-800 relative overflow-hidden">
+  <div class="absolute inset-0 opacity-40" style="background: radial-gradient(circle at 20% 20%, rgba(201,162,75,.25), transparent 45%), radial-gradient(circle at 85% 80%, rgba(139,92,184,.35), transparent 50%);"></div>
+  <div class="grain"></div>
+
+  <div class="max-w-7xl mx-auto px-5 md:px-8 relative z-10">
+    <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+      <p class="eyebrow text-gold-300 mb-3">Depoimentos</p>
+      <h2 class="section-title text-3xl md:text-5xl mb-5 text-white">O que nossos clientes dizem</h2>
+      <div class="divider-orn mb-6"><i data-lucide="quote" class="w-4 h-4 text-gold-300"></i></div>
+      <p class="text-purple-100/90 font-display text-lg">A satisfação dos nossos clientes é a nossa maior conquista. Cada projeto é desenvolvido com dedicação, criatividade e atenção aos detalhes, buscando transformar ideias em resultados únicos.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="feedback-card reveal" data-gallery="feedbacks" data-full="Feedbacks/feedback1.jpeg" data-caption="Depoimento de cliente 1">
+        <img src="Feedbacks/feedback1.jpeg" alt="Depoimento de cliente 1 — La Design Gráfico" loading="lazy">
+      </div>
+      <div class="feedback-card reveal reveal-delay-1" data-gallery="feedbacks" data-full="Feedbacks/feedback2.jpeg" data-caption="Depoimento de cliente 2">
+        <img src="Feedbacks/feedback2.jpeg" alt="Depoimento de cliente 2 — La Design Gráfico" loading="lazy">
+      </div>
+      <div class="feedback-card reveal reveal-delay-2" data-gallery="feedbacks" data-full="Feedbacks/feedback3.jpeg" data-caption="Depoimento de cliente 3">
+        <img src="Feedbacks/feedback3.jpeg" alt="Depoimento de cliente 3 — La Design Gráfico" loading="lazy">
+      </div>
+      <div class="feedback-card reveal" data-gallery="feedbacks" data-full="Feedbacks/feedback4.jpeg" data-caption="Depoimento de cliente 4">
+        <img src="Feedbacks/feedback4.jpeg" alt="Depoimento de cliente 4 — La Design Gráfico" loading="lazy">
+      </div>
+      <div class="feedback-card reveal reveal-delay-1" data-gallery="feedbacks" data-full="Feedbacks/feedback5.jpeg" data-caption="Depoimento de cliente 5">
+        <img src="Feedbacks/feedback5.jpeg" alt="Depoimento de cliente 5 — La Design Gráfico" loading="lazy">
+      </div>
+      <div class="feedback-card reveal reveal-delay-2" data-gallery="feedbacks" data-full="Feedbacks/feedback6.jpeg" data-caption="Depoimento de cliente 6">
+        <img src="Feedbacks/feedback6.jpeg" alt="Depoimento de cliente 6 — La Design Gráfico" loading="lazy">
+      </div>
+      <div class="feedback-card reveal" data-gallery="feedbacks" data-full="Feedbacks/feedback7.jpeg" data-caption="Depoimento de cliente 7">
+        <img src="Feedbacks/feedback7.jpeg" alt="Depoimento de cliente 7 — La Design Gráfico" loading="lazy">
+      </div>
+      <div class="feedback-card reveal reveal-delay-1" data-gallery="feedbacks" data-full="Feedbacks/feedback8.jpeg" data-caption="Depoimento de cliente 8">
+        <img src="Feedbacks/feedback8.jpeg" alt="Depoimento de cliente 8 — La Design Gráfico" loading="lazy">
+      </div>
+      <div class="feedback-card reveal reveal-delay-2" data-gallery="feedbacks" data-full="Feedbacks/feedback9.jpeg" data-caption="Depoimento de cliente 9">
+        <img src="Feedbacks/feedback9.jpeg" alt="Depoimento de cliente 9 — La Design Gráfico" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     PACOTE CASAMENTO COMPLETO
+========================================================= -->
+<section id="casamento" class="py-24 md:py-32 relative overflow-hidden">
+  <div class="absolute -z-10 -bottom-24 -left-24 w-[30rem] h-[30rem] bg-gold-100 rounded-full blur-3xl opacity-70"></div>
+
+  <div class="max-w-7xl mx-auto px-5 md:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+      <p class="eyebrow mb-3">Pacote Casamento Completo</p>
+      <h2 class="section-title text-3xl md:text-5xl mb-5">Tudo o que você precisa para o seu casamento em <span class="text-gradient-purple italic">um único pacote</span>.</h2>
+      <div class="divider-orn mb-6"><i data-lucide="gem" class="w-4 h-4 text-gold-500"></i></div>
+      <p class="text-ink-soft font-display text-lg">Da papelaria à sinalização do salão, cada peça é desenhada para compor uma identidade visual completa e coesa — transformando o seu grande dia em uma experiência visualmente inesquecível.</p>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-5">
+      <div class="gallery-item aspect-square reveal" data-gallery="casamento" data-full="Pacote-Casamento-Completo/Arte de Etiquetas.jpeg" data-caption="Arte de Etiquetas">
+        <img src="Pacote-Casamento-Completo/Arte de Etiquetas.jpeg" alt="Arte de Etiquetas para casamento" loading="lazy"><span class="zoom-badge"><i data-lucide="zoom-in" class="w-4 h-4"></i></span><span class="gallery-caption">Etiquetas</span>
+      </div>
+      <div class="gallery-item aspect-square reveal reveal-delay-1" data-gallery="casamento" data-full="Pacote-Casamento-Completo/Arte de Lágrima de Alegria.jpeg" data-caption="Arte de Lágrima de Alegria">
+        <img src="Pacote-Casamento-Completo/Arte de Lágrima de Alegria.jpeg" alt="Arte de Lágrima de Alegria para casamento" loading="lazy"><span class="zoom-badge"><i data-lucide="zoom-in" class="w-4 h-4"></i></span><span class="gallery-caption">Lágrima de Alegria</span>
+      </div>
+      <div class="gallery-item aspect-square reveal reveal-delay-2" data-gallery="casamento" data-full="Pacote-Casamento-Completo/Arte de Placa de Boas Vindas.jpeg" data-caption="Placa de Boas-Vindas">
+        <img src="Pacote-Casamento-Completo/Arte de Placa de Boas Vindas.jpeg" alt="Placa de Boas-Vindas para casamento" loading="lazy"><span class="zoom-badge"><i data-lucide="zoom-in" class="w-4 h-4"></i></span><span class="gallery-caption">Placa de Boas-Vindas</span>
+      </div>
+      <div class="gallery-item aspect-square reveal reveal-delay-3" data-gallery="casamento" data-full="Pacote-Casamento-Completo/Arte de Ventarola.jpeg" data-caption="Ventarola">
+        <img src="Pacote-Casamento-Completo/Arte de Ventarola.jpeg" alt="Arte de Ventarola para casamento" loading="lazy"><span class="zoom-badge"><i data-lucide="zoom-in" class="w-4 h-4"></i></span><span class="gallery-caption">Ventarola</span>
+      </div>
+      <div class="gallery-item aspect-square reveal" data-gallery="casamento" data-full="Pacote-Casamento-Completo/Arte do Menu.jpeg" data-caption="Menu do Casamento">
+        <img src="Pacote-Casamento-Completo/Arte do Menu.jpeg" alt="Arte de Menu para casamento" loading="lazy"><span class="zoom-badge"><i data-lucide="zoom-in" class="w-4 h-4"></i></span><span class="gallery-caption">Menu</span>
+      </div>
+      <div class="gallery-item aspect-square reveal reveal-delay-1" data-gallery="casamento" data-full="Pacote-Casamento-Completo/Arte lembrancinha.jpeg" data-caption="Lembrancinha">
+        <img src="Pacote-Casamento-Completo/Arte lembrancinha.jpeg" alt="Arte de Lembrancinha para casamento" loading="lazy"><span class="zoom-badge"><i data-lucide="zoom-in" class="w-4 h-4"></i></span><span class="gallery-caption">Lembrancinha</span>
+      </div>
+      <div class="gallery-item aspect-square reveal reveal-delay-2" data-gallery="casamento" data-full="Pacote-Casamento-Completo/Arte para Convite Impresso.jpeg" data-caption="Convite Impresso">
+        <img src="Pacote-Casamento-Completo/Arte para Convite Impresso.jpeg" alt="Arte de Convite Impresso para casamento" loading="lazy"><span class="zoom-badge"><i data-lucide="zoom-in" class="w-4 h-4"></i></span><span class="gallery-caption">Convite Impresso</span>
+      </div>
+      <div class="gallery-item aspect-square reveal reveal-delay-3" data-gallery="casamento" data-full="Pacote-Casamento-Completo/Artes de Cones de Pétalas.jpeg" data-caption="Cones de Pétalas">
+        <img src="Pacote-Casamento-Completo/Artes de Cones de Pétalas.jpeg" alt="Arte de Cones de Pétalas para casamento" loading="lazy"><span class="zoom-badge"><i data-lucide="zoom-in" class="w-4 h-4"></i></span><span class="gallery-caption">Cones de Pétalas</span>
+      </div>
+      <div class="gallery-item aspect-square reveal" data-gallery="casamento" data-full="Pacote-Casamento-Completo/Artes de Plaquinhas de Fotos.jpeg" data-caption="Plaquinhas de Fotos">
+        <img src="Pacote-Casamento-Completo/Artes de Plaquinhas de Fotos.jpeg" alt="Arte de Plaquinhas de Fotos para casamento" loading="lazy"><span class="zoom-badge"><i data-lucide="zoom-in" class="w-4 h-4"></i></span><span class="gallery-caption">Plaquinhas de Fotos</span>
+      </div>
+      <div class="gallery-item aspect-square reveal reveal-delay-1" data-gallery="casamento" data-full="Pacote-Casamento-Completo/Artes do Manual da Daminha-Pajem-Florista.jpeg" data-caption="Manual da Daminha, Pajem e Florista">
+        <img src="Pacote-Casamento-Completo/Artes do Manual da Daminha-Pajem-Florista.jpeg" alt="Manual da Daminha, Pajem e Florista" loading="lazy"><span class="zoom-badge"><i data-lucide="zoom-in" class="w-4 h-4"></i></span><span class="gallery-caption">Manual Daminha / Pajem / Florista</span>
+      </div>
+      <div class="gallery-item aspect-square reveal reveal-delay-2" data-gallery="casamento" data-full="Pacote-Casamento-Completo/Artes do Manual dos Padrinhos.jpeg" data-caption="Manual dos Padrinhos">
+        <img src="Pacote-Casamento-Completo/Artes do Manual dos Padrinhos.jpeg" alt="Manual dos Padrinhos para casamento" loading="lazy"><span class="zoom-badge"><i data-lucide="zoom-in" class="w-4 h-4"></i></span><span class="gallery-caption">Manual dos Padrinhos</span>
+      </div>
+      <div class="gallery-item aspect-square reveal reveal-delay-3" data-gallery="casamento" data-full="Pacote-Casamento-Completo/Carta de Votos dela e dele.jpeg" data-caption="Carta de Votos">
+        <img src="Pacote-Casamento-Completo/Carta de Votos dela e dele.jpeg" alt="Carta de Votos dela e dele" loading="lazy"><span class="zoom-badge"><i data-lucide="zoom-in" class="w-4 h-4"></i></span><span class="gallery-caption">Carta de Votos</span>
+      </div>
+      <div class="gallery-item aspect-square reveal" data-gallery="casamento" data-full="Pacote-Casamento-Completo/Identidade Visual e Monografia.jpeg" data-caption="Identidade Visual e Monograma">
+        <img src="Pacote-Casamento-Completo/Identidade Visual e Monografia.jpeg" alt="Identidade Visual e Monograma do casamento" loading="lazy"><span class="zoom-badge"><i data-lucide="zoom-in" class="w-4 h-4"></i></span><span class="gallery-caption">Identidade Visual e Monograma</span>
+      </div>
+      <div class="gallery-item aspect-square reveal reveal-delay-1" data-gallery="casamento" data-full="Pacote-Casamento-Completo/Plaquinha de Reservado.jpeg" data-caption="Plaquinha de Reservado">
+        <img src="Pacote-Casamento-Completo/Plaquinha de Reservado.jpeg" alt="Plaquinha de Reservado para casamento" loading="lazy"><span class="zoom-badge"><i data-lucide="zoom-in" class="w-4 h-4"></i></span><span class="gallery-caption">Plaquinha de Reservado</span>
+      </div>
+      <div class="gallery-item aspect-square reveal reveal-delay-2" data-gallery="casamento" data-full="Pacote-Casamento-Completo/Tag Bem Casado.jpeg" data-caption="Tag Bem Casado">
+        <img src="Pacote-Casamento-Completo/Tag Bem Casado.jpeg" alt="Tag Bem Casado para casamento" loading="lazy"><span class="zoom-badge"><i data-lucide="zoom-in" class="w-4 h-4"></i></span><span class="gallery-caption">Tag Bem Casado</span>
+      </div>
+      <div class="gallery-item aspect-square reveal reveal-delay-3" data-gallery="casamento" data-full="Pacote-Casamento-Completo/Tag lembrancinha.jpeg" data-caption="Tag Lembrancinha">
+        <img src="Pacote-Casamento-Completo/Tag lembrancinha.jpeg" alt="Tag Lembrancinha para casamento" loading="lazy"><span class="zoom-badge"><i data-lucide="zoom-in" class="w-4 h-4"></i></span><span class="gallery-caption">Tag Lembrancinha</span>
+      </div>
+    </div>
+
+    <!-- Convite Digital Interativo -->
+    <div class="mt-20 grid lg:grid-cols-2 gap-12 items-center bg-white rounded-[2rem] p-6 md:p-12 shadow-xl border border-gold-500/15 reveal">
+      <div class="ring-frame max-w-sm mx-auto">
+        <img src="Pacote-Casamento-Completo/Convite Digital Interativo.jpeg" alt="Convite Digital Interativo — La Design Gráfico" class="rounded-2xl shadow-lg w-full">
+      </div>
+      <div class="text-center lg:text-left">
+        <p class="eyebrow mb-3">Destaque especial</p>
+        <h3 class="section-title text-3xl md:text-4xl mb-4">Convite Digital <span class="text-gradient-purple italic">Interativo</span></h3>
+        <p class="text-ink-soft leading-relaxed mb-8">Um convite que vai além do papel: com botões interativos para confirmação de presença, localização, manual dos convidados e muito mais — tudo em uma experiência digital elegante e funcional.</p>
+        <a href="https://drive.google.com/file/d/1ajtXC23uOOth0_H_moar-UifUXA6e5ho/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-purple">
+          <i data-lucide="external-link" class="w-4 h-4"></i> Visualizar Convite
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     DIFERENCIAIS
+========================================================= -->
+<section id="diferenciais" class="py-24 md:py-32 bg-cream-soft">
+  <div class="max-w-7xl mx-auto px-5 md:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+      <p class="eyebrow mb-3">Por que escolher a La Design</p>
+      <h2 class="section-title text-3xl md:text-5xl mb-5">Nossos diferenciais</h2>
+      <div class="divider-orn"><i data-lucide="star" class="w-4 h-4 text-gold-500"></i></div>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="diff-item reveal"><div class="diff-icon"><i data-lucide="heart-handshake" class="w-5 h-5"></i></div><h3 class="font-serif text-lg">Atendimento Personalizado</h3><p class="text-sm text-ink-soft">Cada cliente é ouvido e acompanhado de perto em todas as etapas.</p></div>
+      <div class="diff-item reveal reveal-delay-1"><div class="diff-icon"><i data-lucide="gem" class="w-5 h-5"></i></div><h3 class="font-serif text-lg">Design Exclusivo</h3><p class="text-sm text-ink-soft">Artes autorais, criadas especialmente para você, sem fórmulas prontas.</p></div>
+      <div class="diff-item reveal reveal-delay-2"><div class="diff-icon"><i data-lucide="zap" class="w-5 h-5"></i></div><h3 class="font-serif text-lg">Entrega Rápida</h3><p class="text-sm text-ink-soft">Prazos ágeis sem abrir mão da qualidade e do cuidado nos detalhes.</p></div>
+      <div class="diff-item reveal"><div class="diff-icon"><i data-lucide="award" class="w-5 h-5"></i></div><h3 class="font-serif text-lg">Qualidade Profissional</h3><p class="text-sm text-ink-soft">Materiais e arquivos entregues com padrão profissional de mercado.</p></div>
+      <div class="diff-item reveal reveal-delay-1"><div class="diff-icon"><i data-lucide="laptop" class="w-5 h-5"></i></div><h3 class="font-serif text-lg">Atendimento Online</h3><p class="text-sm text-ink-soft">Todo o processo de criação feito de forma prática, onde você estiver.</p></div>
+      <div class="diff-item reveal reveal-delay-2"><div class="diff-icon"><i data-lucide="fingerprint" class="w-5 h-5"></i></div><h3 class="font-serif text-lg">Identidade Visual Única</h3><p class="text-sm text-ink-soft">Sua marca com uma assinatura visual que não se parece com nenhuma outra.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     CHAMADA FINAL (CTA)
+========================================================= -->
+<section class="relative py-24 md:py-32 bg-brand-gradient overflow-hidden cta-glow">
+  <div class="grain"></div>
+  <div class="max-w-3xl mx-auto px-5 md:px-8 text-center relative z-10 reveal-scale">
+    <i data-lucide="sparkles" class="w-8 h-8 text-gold-300 mx-auto mb-6"></i>
+    <h2 class="section-title text-3xl md:text-5xl text-white mb-6">Vamos transformar sua ideia em uma <span class="text-gradient-gold italic">arte inesquecível</span>?</h2>
+    <p class="text-purple-100/90 font-display text-lg mb-10">Fale agora comigo e receba um orçamento personalizado para o seu projeto.</p>
+    <a href="https://wa.me/message/SDALEQO5U45FD1" target="_blank" rel="noopener" class="btn btn-gold !py-5 !px-10 !text-base">
+      <i data-lucide="message-circle" class="w-5 h-5"></i> Solicitar Orçamento
+    </a>
+  </div>
+</section>
+
+<!-- =========================================================
+     CONTATOS
+========================================================= -->
+<section id="contato" class="py-24 md:py-28">
+  <div class="max-w-7xl mx-auto px-5 md:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+      <p class="eyebrow mb-3">Vamos conversar</p>
+      <h2 class="section-title text-3xl md:text-5xl">Contatos</h2>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <a href="https://wa.me/message/SDALEQO5U45FD1" target="_blank" rel="noopener" class="diff-item items-center text-center reveal group">
+        <div class="diff-icon w-16 h-16 mx-auto !bg-green-100 !text-green-600 group-hover:!bg-green-500 group-hover:!text-white transition"><i class="bi bi-whatsapp text-green-400 text-3xl"></i></i></div>
+        <h3 class="font-serif text-lg mx-auto">WhatsApp</h3>
+        <p class="text-sm text-ink-soft mx-auto">Fale diretamente comigo e peça seu orçamento.</p>
+      </a>
+      <a href="https://www.instagram.com/convites.designgrafico?igsh=MWkzY2VrMGphdzlkdQ%3D%3D&utm_source=qr" target="_blank" rel="noopener" class="diff-item items-center text-center reveal reveal-delay-1 group">
+        <div class="diff-icon w-16 h-16 mx-auto group-hover:!bg-purple-600 group-hover:!text-white transition">
+          <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+        </div>
+        <h3 class="font-serif text-lg mx-auto">Instagram</h3>
+        <p class="text-sm text-ink-soft mx-auto">@convites.designgrafico — acompanhe os bastidores e trabalhos.</p>
+      </a>
+      <a href="https://www.instagram.com/bygsoftsolutions?igsh=b2hlYXRpdW8wdGYy&utm_source=qr" target="_blank" rel="noopener" class="diff-item items-center text-center reveal reveal-delay-2 group sm:col-span-2 lg:col-span-1">
+        <div class="diff-icon w-16 h-16 mx-auto group-hover:!bg-gold-600 group-hover:!text-white transition"><i data-lucide="rocket" class="w-7 h-7"></i></div>
+        <h3 class="font-serif text-lg mx-auto">Parceiro Tecnológico</h3>
+        <p class="text-sm text-ink-soft mx-auto">BygSoft Solutions — desenvolvimento de sites e automações.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     RODAPÉ
+========================================================= -->
+<footer class="bg-purple-800 text-purple-100 pt-16 pb-8 relative overflow-hidden">
+  <div class="grain"></div>
+  <div class="max-w-7xl mx-auto px-5 md:px-8 relative z-10">
+    <div class="flex flex-col md:flex-row items-center md:items-start justify-between gap-10 pb-10 border-b border-white/10">
+      <div class="flex items-center gap-4">
+        <span class="logo-badge w-16 h-16 shrink-0">
+          <img src="Principal/logo.jpeg" alt="La Design Gráfico" class="w-full h-full object-cover">
+        </span>
+        <div>
+          <p class="font-script text-3xl text-gold-300 leading-none">La Design Gráfico</p>
+          <p class="text-xs tracking-[0.25em] uppercase text-purple-200 mt-1">Identidade Visual</p>
+        </div>
+      </div>
+
+      <div class="flex gap-4">
+        <a href="https://wa.me/message/SDALEQO5U45FD1" target="_blank" rel="noopener" class="w-11 h-11 rounded-full border border-white/25 flex items-center justify-center hover:bg-gold-500 hover:text-purple-900 hover:border-gold-500 transition"><i data-lucide="message-circle" class="w-5 h-5"></i></a>
+        <a href="https://www.instagram.com/convites.designgrafico?igsh=MWkzY2VrMGphdzlkdQ%3D%3D&utm_source=qr" target="_blank" rel="noopener" class="w-11 h-11 rounded-full border border-white/25 flex items-center justify-center hover:bg-gold-500 hover:text-purple-900 hover:border-gold-500 transition">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-purple-200/80 text-center md:text-left">
+      <p>&copy; <span id="year"></span> La Design Gráfico. Todos os direitos reservados.</p>
+      <p>Desenvolvido em parceria com <a href="https://www.instagram.com/bygsoftsolutions?igsh=b2hlYXRpdW8wdGYy&utm_source=qr" target="_blank" rel="noopener" class="text-gold-300 hover:underline">BygSoft Solutions</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp flutuante -->
+<a href="https://wa.me/message/SDALEQO5U45FD1" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Falar no WhatsApp">
+   <i class="bi bi-whatsapp text-green-400 text-3xl" style="color: white; font-size: 2rem;"></i>
+</a>
+
+<!-- =========================================================
+     LIGHTBOX
+========================================================= -->
+<div id="lightbox">
+  <button id="lb-close" aria-label="Fechar"><i data-lucide="x" class="w-5 h-5"></i></button>
+  <button id="lb-prev" class="lb-btn" aria-label="Imagem anterior"><i data-lucide="chevron-left" class="w-5 h-5"></i></button>
+  <figure>
+    <img id="lb-img" src="" alt="">
+    <figcaption id="lb-caption"></figcaption>
+  </figure>
+  <button id="lb-next" class="lb-btn" aria-label="Próxima imagem"><i data-lucide="chevron-right" class="w-5 h-5"></i></button>
+  <span id="lb-counter"></span>
+</div>
+
+<script src="js/main.js"></script>
+<script>
+  window.addEventListener('load', () => { if (window.lucide) lucide.createIcons(); });
+  document.addEventListener('DOMContentLoaded', () => { if (window.lucide) lucide.createIcons(); });
+</script>
+</body>
+</html>
